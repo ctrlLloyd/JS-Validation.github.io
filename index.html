@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="popup">
+        <div class="popup-bx">
+            <div class="checking-msg"></div>
+            <div class="continue">
+                <button id="continue-btn" onclick="exit()">Continue</button>
+            </div>
+            <div class="exit">
+                <p>Thank you for trying out my code!</p>
+                <p>All rights reserve 2022 | © Ctrl+Lloyd</p>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="form-box">
+            <form action="" id="my-form">
+                <h1>JS Form Validation</h1>
+                <div class="msg"></div>
+                <div class="input-box">
+                    <label for="">Password</label>
+                    <input type="password" name="" id="pass" onkeyup="passCheck()">
+                </div>
+                <div class="input-box">
+                    <label for="">Confirm Password</label>
+                    <input type="password" name="" id="cpass" onkeyup="pass2()">
+                </div>
+                <button id="validate" onclick="check()">Submit</button>
+            </form>
+            
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
